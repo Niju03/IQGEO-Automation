@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <listeners>
+        <listener class-name="RegressionTests.TestComponents.Listeners" />
+    </listeners>
+
+    <test name="Create Project" thread-count="1">
+        <classes>
+            <class name="RegressionTests.CreateProjectTest" />
+        </classes>
+    </test>
+</suite>

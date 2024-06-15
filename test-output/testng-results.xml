@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-15T01:30:46 IST" name="Default suite" finished-at="2024-06-15T01:31:39 IST" duration-ms="53404">
+    <groups>
+    </groups>
+    <test started-at="2024-06-15T01:30:46 IST" name="Default test" finished-at="2024-06-15T01:31:39 IST" duration-ms="53404">
+      <class name="RegressionTests.CreateProjectTest">
+        <test-method is-config="true" signature="Launchapplication()[pri:0, instance:RegressionTests.CreateProjectTest@2a640157]" started-at="2024-06-15T01:30:46 IST" name="Launchapplication" finished-at="2024-06-15T01:30:53 IST" duration-ms="6586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launchapplication -->
+        <test-method signature="Loginproject()[pri:1, instance:RegressionTests.CreateProjectTest@2a640157]" started-at="2024-06-15T01:30:53 IST" name="Loginproject" finished-at="2024-06-15T01:30:57 IST" duration-ms="3983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginproject -->
+        <test-method signature="Createprojectbutton()[pri:2, instance:RegressionTests.CreateProjectTest@2a640157]" started-at="2024-06-15T01:30:57 IST" name="Createprojectbutton" finished-at="2024-06-15T01:31:39 IST" duration-ms="42329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Createprojectbutton -->
+        <test-method is-config="true" signature="sendEmailAfterSuite()[pri:0, instance:RegressionTests.CreateProjectTest@2a640157]" started-at="2024-06-15T01:31:40 IST" name="sendEmailAfterSuite" finished-at="2024-06-15T01:31:40 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmailAfterSuite -->
+      </class> <!-- RegressionTests.CreateProjectTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

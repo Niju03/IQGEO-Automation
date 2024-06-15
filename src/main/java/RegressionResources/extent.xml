@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- Report theme -->
+        <theme>dark</theme>
+        
+        <!-- Document settings -->
+        <documentTitle>Automation Test Report</documentTitle>
+        <reportName>ExtentReport</reportName>
+        <encoding>UTF-8</encoding>
+        
+        <!-- Custom CSS -->
+        <css>path/to/custom.css</css>
+        
+        <!-- Custom JavaScript -->
+        <js>path/to/custom.js</js>
+        
+        <!-- Timestamp format -->
+        <timeStampFormat>yyyy-MM-dd HH:mm:ss</timeStampFormat>
+        
+        <!-- System information -->
+        <systemInfo>
+            <param name="Environment" value="QA" />
+            <param name="Browser" value="Chrome" />
+            <param name="Platform" value="Windows 10" />
+            <!-- Add more parameters as needed -->
+        </systemInfo>
+        
+        <!-- Other configuration settings -->
+        <chartVisibilityOnOpen>true</chartVisibilityOnOpen>
+        <screenCaptureTimeout>300</screenCaptureTimeout>
+        
+        <!-- Add any other custom settings here -->
+    </configuration>
+</extentreports>
