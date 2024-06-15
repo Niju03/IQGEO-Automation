@@ -37,8 +37,8 @@ public class CreateProjectTest extends BaseTest {
         projectCreatePage.selectContractorOption();
         projectCreatePage.Projectsize();
 //
-        String startDate = "2024-06-16";
-        String endDate = "2024-06-20";
+        String startDate = "2025-06-16";
+        String endDate = "2025-06-20";
 
         projectCreatePage.selectProjectDates(startDate, endDate);
         projectCreatePage.selectSurveyDates(startDate, endDate);
