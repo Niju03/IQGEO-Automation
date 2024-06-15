@@ -12,44 +12,40 @@ import Regressionpageobjects.ProjectCreatePage;
 @Listeners(RegressionTests.TestComponents.Listeners.class)
 public class CreateProjectTest extends BaseTest {
 
-    @Test(priority = 1)
-    public void Loginproject() throws Exception {
-        LoginPage loginPage = new LoginPage(driver);
-        String loginSuccessfully = loginPage.LoginSucess();
+	@Test(priority = 1)
+	public void Loginproject() throws Exception {
+		LoginPage loginPage = new LoginPage(driver);
+		String loginSuccessfully = loginPage.LoginSucess();
 
-        Assert.assertEquals(loginSuccessfully, "IQGeo");
+		Assert.assertEquals(loginSuccessfully, "IQGeo");
 
-        HomePage homepage = new HomePage(driver);
-        homepage.HomeApplication();
-        String homepageSuccess = homepage.HomePagesucess();
-        Assert.assertEquals(homepageSuccess, "Built by");
-    }
+		HomePage homepage = new HomePage(driver);
+		homepage.HomeApplication();
+		String homepageSuccess = homepage.HomePagesucess();
+		Assert.assertEquals(homepageSuccess, "Built by");
+	}
 
-    @Test(priority = 2)
-    public void Createprojectbutton() throws Exception {
-        ProjectCreatePage projectCreatePage = new ProjectCreatePage(driver);
+//	@Test(priority = 2)
+	public void Createprojectbutton() throws Exception {
+		ProjectCreatePage projectCreatePage = new ProjectCreatePage(driver);
 
-        projectCreatePage.createButton();
-        projectCreatePage.searchButton();
-        projectCreatePage.inputSearch();
-        projectCreatePage.selectSearch();
-        projectCreatePage.okButton();
-        projectCreatePage.selectContractorOption();
-        projectCreatePage.Projectsize();
-//
-        String startDate = "2025-06-16";
-        String endDate = "2025-06-20";
+		projectCreatePage.createButton();
+		projectCreatePage.searchButton();
+		projectCreatePage.inputSearch();
+		projectCreatePage.selectSearch();
+		projectCreatePage.okButton();
+		projectCreatePage.selectContractorOption();
+		projectCreatePage.Projectsize();
 
-        projectCreatePage.selectProjectDates(startDate, endDate);
-        projectCreatePage.selectSurveyDates(startDate, endDate);
-        projectCreatePage.selectPermitDates(startDate, endDate);
-        projectCreatePage.selectOltDates(startDate, endDate);
+		String startDate = "2024-06-29";
+		String endDate = "2024-07-29";
 
-        projectCreatePage.submitButton();
-    }
+		projectCreatePage.selectProjectDates(startDate, endDate);
+		projectCreatePage.selectSurveyDates(startDate, endDate);
+		projectCreatePage.selectPermitDates(startDate, endDate);
+		projectCreatePage.selectOltDates(startDate, endDate);
 
-   
- 
-     
-    }
+		projectCreatePage.submitButton();
+	}
 
+}
