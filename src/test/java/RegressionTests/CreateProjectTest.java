@@ -24,8 +24,7 @@ public class CreateProjectTest extends BaseTest {
 		String homepageSuccess = homepage.HomePagesucess();
 		Assert.assertEquals(homepageSuccess, "Built by");
 	}
-
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void Createprojectbutton() throws Exception {
 		ProjectCreatePage projectCreatePage = new ProjectCreatePage(driver);
 
