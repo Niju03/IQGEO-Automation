@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-15T23:29:50 IST" name="Default suite" finished-at="2024-06-15T23:31:07 IST" duration-ms="77428">
+  <suite started-at="2024-07-10T20:22:15 IST" name="Regression Suite" finished-at="2024-07-10T20:23:46 IST" duration-ms="91286">
     <groups>
     </groups>
-    <test started-at="2024-06-15T23:29:50 IST" name="Default test" finished-at="2024-06-15T23:31:07 IST" duration-ms="77428">
+    <test started-at="2024-07-10T20:22:15 IST" name="Create Project" finished-at="2024-07-10T20:23:46 IST" duration-ms="91286">
       <class name="RegressionTests.CreateProjectTest">
-        <test-method is-config="true" signature="Launchapplication()[pri:0, instance:RegressionTests.CreateProjectTest@436bc36]" started-at="2024-06-15T23:29:50 IST" name="Launchapplication" finished-at="2024-06-15T23:30:01 IST" duration-ms="10803" status="PASS">
+        <test-method is-config="true" signature="Launchapplication()[pri:0, instance:RegressionTests.CreateProjectTest@6986bbaf]" started-at="2024-07-10T20:22:15 IST" name="Launchapplication" finished-at="2024-07-10T20:22:21 IST" duration-ms="6156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launchapplication -->
-        <test-method signature="Loginproject()[pri:1, instance:RegressionTests.CreateProjectTest@436bc36]" started-at="2024-06-15T23:30:01 IST" name="Loginproject" finished-at="2024-06-15T23:30:10 IST" duration-ms="9400" status="PASS">
+        <test-method signature="Application_Login()[pri:1, instance:RegressionTests.CreateProjectTest@6986bbaf]" started-at="2024-07-10T20:22:21 IST" name="Application_Login" finished-at="2024-07-10T20:22:25 IST" duration-ms="3758" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Loginproject -->
-        <test-method signature="Createprojectbutton()[pri:2, instance:RegressionTests.CreateProjectTest@436bc36]" started-at="2024-06-15T23:30:11 IST" name="Createprojectbutton" finished-at="2024-06-15T23:31:07 IST" duration-ms="56387" status="PASS">
+        </test-method> <!-- Application_Login -->
+        <test-method signature="Project_Creation()[pri:2, instance:RegressionTests.CreateProjectTest@6986bbaf]" started-at="2024-07-10T20:22:25 IST" name="Project_Creation" finished-at="2024-07-10T20:23:16 IST" duration-ms="50461" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Createprojectbutton -->
+        </test-method> <!-- Project_Creation -->
       </class> <!-- RegressionTests.CreateProjectTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="RegressionTests.FPStest">
+        <test-method is-config="true" signature="Launchapplication()[pri:0, instance:RegressionTests.FPStest@12c7a01b]" started-at="2024-07-10T20:23:16 IST" name="Launchapplication" finished-at="2024-07-10T20:23:21 IST" duration-ms="5366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launchapplication -->
+        <test-method signature="FPS_Project_Link()[pri:3, instance:RegressionTests.FPStest@12c7a01b]" started-at="2024-07-10T20:23:21 IST" name="FPS_Project_Link" finished-at="2024-07-10T20:23:46 IST" duration-ms="24867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FPS_Project_Link -->
+      </class> <!-- RegressionTests.FPStest -->
+    </test> <!-- Create Project -->
+  </suite> <!-- Regression Suite -->
 </testng-results>

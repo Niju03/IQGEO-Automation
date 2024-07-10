@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.BeforeClass;
-import Regressionpageobjects.LoginPage;
+import Regressionpageobjects.Login_Page;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,41 +15,41 @@ import java.util.Date;
 
 public class BaseTest {
 
-    protected WebDriver driver;
-    protected LoginPage loginPage;
-    public static final String SCREENSHOT_DIR = "C:\\Users\\niranjans\\eclipse-workspace\\IQGEO_Automation\\Screenshots\\";
+	protected WebDriver driver;
+	protected Login_Page login_Page;
+	public static final String SCREENSHOT_DIR = "C:\\Users\\niranjans\\eclipse-workspace\\IQGEO_Automation\\Screenshots\\";
 
-    @BeforeClass
-    public void Launchapplication() {
-        // Initialize the WebDriver (ChromeDriver in this case)
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\niranjans\\eclipse-workspace\\IQGEO_Automation\\my driver\\chromedriver.exe");
-        driver = new ChromeDriver();
+	@BeforeClass
+	public void Launchapplication() {
+		// Initialize the WebDriver (ChromeDriver in this case)
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\niranjans\\eclipse-workspace\\IQGEO_Automation\\my driver\\chromedriver.exe");
+		driver = new ChromeDriver();
 
-        // Maximize browser window
-        driver.manage().window().maximize();
+		// Maximize browser window
+		driver.manage().window().maximize();
 
-        // Initialize the page objects
-        loginPage = new LoginPage(driver);
+		// Initialize the page objects
+		login_Page = new Login_Page(driver);
 
-        // Open the application URL
-        loginPage.goTo();
+		// Open the application URL
+		login_Page.goTo();
 
-        // Log in to the application using the credentials from the properties file
-        loginPage.LoginApplication();
-    }
+		// Log in to the application using the credentials from the properties file
+		login_Page.LoginApplication();
+	}
 
-    
-    public String captureScreenshot(String methodName) {
-        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String filePath = SCREENSHOT_DIR + methodName + "_" + timeStamp + ".png";
-        try {
-            FileHandler.copy(screenshot, new File(filePath));
-            System.out.println("Screenshot captured: " + filePath);
-            return filePath;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
+	public String captureScreenshot(String methodName) {
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+		String filePath = SCREENSHOT_DIR + methodName + "_" + timeStamp + ".png";
+		try {
+			FileHandler.copy(screenshot, new File(filePath));
+			System.out.println("Screenshot captured: " + filePath);
+			return filePath;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 }

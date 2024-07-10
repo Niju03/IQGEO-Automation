@@ -1,0 +1,1 @@
+{"uuid":"3a0e0206-46aa-4c6c-a5f1-493752c470e0","name":"RegressionTests.CreateProjectTest","children":["c5dc21de-b48f-4973-a204-977cd0d5ffa2"],"befores":[{"name":"Launchapplication","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1720439305058,"stop":1720439311012}],"afters":[],"start":1720439305037,"stop":1720439315776}

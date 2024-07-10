@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RegressionTests.CreateProjectTest">
+      <class name="RegressionTests.FPStest">
         <methods>
-          <include name="Createprojectbutton"/>
-          <include name="tearDown"/>
+          <include name="FPSLink"/>
           <include name="Launchapplication"/>
-          <include name="Loginproject"/>
         </methods>
-      </class> <!-- RegressionTests.CreateProjectTest -->
+      </class> <!-- RegressionTests.FPStest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

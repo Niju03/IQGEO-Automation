@@ -24,7 +24,9 @@ public class Listeners implements ITestListener {
     public void onStart(ITestContext context) {
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         String reportName = "Test-Report-" + timeStamp + ".html";
-        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/Extent Reports" + reportName);
+        String reportPath = "C:\\Users\\niranjans\\eclipse-workspace\\IQGEO_Automation\\Extent Reports\\" + reportName;
+
+        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(reportPath);
 
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
@@ -61,6 +63,8 @@ public class Listeners implements ITestListener {
             BaseTest baseTest = (BaseTest) currentClass;
             String screenshotPath = baseTest.captureScreenshot(result.getMethod().getMethodName());
             if (screenshotPath != null) {
+                // Modify screenshot path to desired package structure
+                screenshotPath = screenshotPath.replace("screenshots/", "RegressionTests/TestComponents/");
                 test.addScreenCaptureFromPath(screenshotPath);
             }
         }
